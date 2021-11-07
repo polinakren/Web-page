@@ -2,15 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta
+	name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"
+    >
+
     <title> Wooden house </title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/sprite/sprite.css">
 </head>
 
 <body>
     <div class="head-site">
         <div class="container">
+            <div class="icon icon-birds birds"></div>
+          
+
             <div class="head-contacts">
                 <div class="logo">
                     <p>Строительство домов из</p>
@@ -18,41 +27,46 @@
                 </div>
                 <div class="mark">
                     <div class="mark-desc">
-                        <p>Я</p>
-                        <p>5,0<span>/5</span></p>
-                        <p><i class="fa fa-star" aria-hidden="true"></i> Ваша оценка</p>
+                        <span class="icon-yandex icon"></span>
+                        <p>5,0<span id="mark-5">/5</span> </p>
+                        <span class="icon-star icon"></span>
+                        <span>Ваша оценка</span>
                     </div>
                     <p>Рейтинг организаций в яндексе</p>
                 </div>
                 <div class="socials">
                     <p>Задайте вопрос напрямую:</p>
-                    <button id="telegram"> <i class="fa fa-telegram" aria-hidden="true"></i> Telegram</button>
-                    <button id="whatSapp"> <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatSApp</button>
+                    <div class="buttons">
+                        <button id="telegram"> <span class="icon-telegram"></span> Telegram</button>
+                        <button id="whatSapp"> <span class="icon-whatsapp"></span> WhatSApp</button>
+                    </div>
+                    
                 </div>
                 <div class="time">
                     <p>Среднее время</p>
                     <p>ответа: 24 секунды</p>
                 </div>
                 <div class="feedback">
-                    <p> <i class="fa fa-volume-control-phone" aria-hidden="true"></i> Звоните прямо сейчас</p>
+                    <p><i class="icon-telephone"></i> Звоните прямо сейчас</p>
                     <p><a href="tel:+74950034562">+7 (495) 003-45-62</a></p>
                     <p><a href="tel:+79210034562">+7 (921) 003-45-62</a></p>
                     <p><span>Просчитайте смету</span><span>Перезвоните мне</span></p>
                 </div>
             </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#">Проекты</a></li>
-                    <li><a href="#">Расчет стоимости</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Производство</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>   
-            
+            <div class="nav-shadow">
+                <nav>
+                    <ul>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Расчет стоимости</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Производство</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>   
+            </div>
 
             <div class="head-question">
                 <p>Мечтаете о надежном и комфортном доме?</p>
@@ -79,12 +93,17 @@
             </div>
 
             <div class="head-buttons">
-                <button>
-                    Расчет стоимости
-                </button>
-                <button>
+                <span class="button-shadow">
+                    <button>
+                        Расчет стоимости
+                    </button>
+                    <button>
+                        Расчет стоимости
+                    </button>
+                </span>
+                <button class="button-consul">
                     Консультация инженера
-                    <span>Это бесплатно</span>
+                    <span class="button-span">Это бесплатно</span>
                 </button>
             </div>
         </div>

@@ -1,0 +1,78 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-birds {
+  background-image: url(sprite.png);
+  background-position: -84px -246px;
+  width: 73px;
+  height: 32px;
+}
+.icon-bush {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 255px;
+  height: 246px;
+}
+.icon-leaf {
+  background-image: url(sprite.png);
+  background-position: -255px -133px;
+  width: 98px;
+  height: 97px;
+}
+.icon-leaf2 {
+  background-image: url(sprite.png);
+  background-position: -255px 0px;
+  width: 99px;
+  height: 133px;
+}
+.icon-logo {
+  background-image: url(sprite.png);
+  background-position: 0px -246px;
+  width: 84px;
+  height: 36px;
+}
+.icon-star {
+  background-image: url(sprite.png);
+  background-position: -281px -230px;
+  width: 10px;
+  height: 10px;
+}
+.icon-telegram {
+  background-image: url(sprite.png);
+  background-position: -269px -230px;
+  width: 12px;
+  height: 10px;
+}
+.icon-telephone {
+  background-image: url(sprite.png);
+  background-position: -291px -230px;
+  width: 10px;
+  height: 10px;
+}
+.icon-whatsapp {
+  background-image: url(sprite.png);
+  background-position: -255px -230px;
+  width: 14px;
+  height: 14px;
+}
+.icon-yandex {
+  background-image: url(sprite.png);
+  background-position: -157px -246px;
+  width: 9px;
+  height: 18px;
+}

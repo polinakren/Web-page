@@ -9,16 +9,36 @@ body {
 
 .container {
     padding: 0 128px 0 128px;
+    background-image: url("../assets/house.png") ;
+    background-position: bottom right;
+    background-repeat: no-repeat ;
+    background-size: 57%;
+    position: relative;
+}
+
+.icon {
+    pointer-events: none;
+}
+
+.birds {
+    position: absolute;
+    margin-top: 247px;
+    transform: translateX(1650%);
+    display: block;
 }
 
 .head-site {
-    background:aliceblue url("../assets/Прямоугольник\ 1.png");
-    background-size: cover;
     min-height: 821px;
+    background-color:aliceblue;
+    background-image: url("../assets/background.png"), url("../assets/house.png") ;
+    background-position: center, bottom right;
+    background-repeat: no-repeat, no-repeat ;
+    background-size: cover;
 }
 
 .head-contacts {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -31,40 +51,9 @@ body {
 
 .mark-desc {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-}
-
-.mark-desc p {
-    margin: 0;
-}
-
-.mark-desc p:first-child {
-    font-weight: bold;
-    font-size: 18px;
-    color: red;
-}
-
-.mark-desc p:nth-child(2) {
-    font-weight: bold;
-    font-size: 18px;
-    color: #090909;
-}
-
-.mark-desc span {
-    font-weight: normal;
-    font-size: 12px;
-    color: #090909;
-}
-
-.mark-desc i {
-    color: #2e86aa;
-}
-
-.mark-desc p:nth-last-child(1) {
-    font-weight: bold;
-    font-size: 10px;
-    color: #2e86aa;
+    justify-content: space-between;
 }
 
 .mark {
@@ -73,17 +62,41 @@ body {
     background-color: #fff;
 }
 
-.mark p {
+.mark p, span {
+    margin: 0;
+}
+
+.mark p:last-child {
     font-weight: normal;
     font-size: 9px;
     text-transform: uppercase;
     margin: 8px 0 0 0;
 }
 
+.mark-desc p{
+    font-weight: bold;
+    font-size: 18px;
+    color: #090909;
+}
+
+#mark-5 {
+    font-weight: normal;
+    font-size: 12px;
+    color: #090909;
+}
+
+.mark-desc span:nth-child(4) {
+    font-weight: bold;
+    font-size: 10px;
+    color: #2e86aa;
+    text-transform: uppercase;
+}
+
 .socials {
     padding: 13px 15px;
     border-radius: 10px;
     background-color: #fff;
+    
 }
 
 .socials p {
@@ -97,6 +110,16 @@ body {
     font-size: 11px;
     color: #fff;
     margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.socials span {
+    margin-right: 6px;
+}
+
+.buttons {
+    display: flex;
 }
 
 #telegram {
@@ -130,6 +153,8 @@ body {
 
 .feedback p {
     margin: 8px;
+    display: flex;
+    align-items: center;
 }
 
 .feedback a {
@@ -164,11 +189,16 @@ body {
     margin-right: 14px;
 }
 
-nav {
+.nav-shadow {
     margin-top: 20px;
-    padding: 11px 57px 11px 39px;
+    padding: 6px 8px 6px 8px;
     border-radius: 10px;
     box-shadow: 0 0 21px 0 rgba(131, 169, 184, 0.16);
+}
+
+nav {
+    padding: 11px 57px 11px 39px;
+    border-radius: 10px;
     background-color: #fff;
 }
 
@@ -176,6 +206,7 @@ nav ul {
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -188,6 +219,10 @@ nav li {
 nav a {
     text-decoration: none;
     color: #090909;
+}
+
+nav a:hover {
+    color: #2e86aa;
 }
 
 .head-question p {
@@ -255,18 +290,34 @@ nav a {
     cursor: pointer;
 }
 
+.button-shadow button:nth-child(1) {
+    position: absolute; 
+    margin-top: 4px;
+    display: block;
+    padding:34px 39px 32px 40px;
+    border-radius: 43px;
+    background-color: #d1b76c;
+    border: solid 2px #d1b76c;
+}
 
-.head-buttons button:first-child {
+
+.button-shadow button:nth-child(2) {
+    position: relative;
     padding:34px 39px 32px 40px;
     border-radius: 38.2px;
     border: none;
     box-shadow: 0 0 9px 0 rgba(218, 183, 104, 0.92);
-    border: solid 2px #dab768;
-    background-color: #dab768;
-    position: relative;
+    border: solid 2px #efdc85;
+    background-color: #efdc85;
 }
 
-.head-buttons button:nth-child(2) {
+.button-shadow button:nth-child(2):hover {
+    border: solid 2px #dab792;
+    background-color: #dab792;
+}
+
+.button-consul {
+    position: relative;
     margin-left: 14px;
     padding: 34px 39px 32px 40px;
     border-radius: 38.2px;
@@ -274,7 +325,10 @@ nav a {
     background-color: transparent;
 }
 
-.head-buttons span {
+.button-span {
+    position: absolute;
+    margin-top: 14px;
+    transform: translateX(20%);
     display: block;
     background-color: #3ba5d1;
     border-radius: 11.9px;
@@ -282,8 +336,4 @@ nav a {
     font-weight: normal;
     color: #fff;
     padding: 10px 11px 10px 13px;
-    position: absolute;
-    top: 100%;
-    margin-top: -25px;
-    transform: translateX(20%);
 }

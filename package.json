@@ -1,0 +1,25 @@
+{
+  "name": "web-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "C:/Users/Admin/Desktop/Study/Web/Web-page/node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polinakren/Web-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polinakren/Web-page/issues"
+  },
+  "homepage": "https://github.com/polinakren/Web-page#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp.spritesmith": "^6.12.1"
+  }
+}
