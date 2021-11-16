@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
-    <meta
-	name="viewport"
-	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
     <title> Wooden house </title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/fonts.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/sprite/sprite.css">
+    <link rel="stylesheet" href="./styles/all_styles.css">
 </head>
 
 <body>
     <div class="head-site">
         <div class="container">
-            <div class="icon icon-birds birds"></div>
-          
-
-            <div class="head-contacts">
+            <div class="flex-block">
                 <div class="logo">
                     <p>Строительство домов из</p>
                     <p>клееного бруса</p>
                 </div>
                 <div class="mark">
-                    <div class="mark-desc">
+                    <div class="mark-desc flex-block">
                         <span class="icon-yandex icon"></span>
-                        <p>5,0<span id="mark-5">/5</span> </p>
+                        <p>5,0<span class="mark-5">/5</span> </p>
                         <span class="icon-star icon"></span>
                         <span>Ваша оценка</span>
                     </div>
@@ -36,15 +27,14 @@
                 </div>
                 <div class="socials">
                     <p>Задайте вопрос напрямую:</p>
-                    <div class="buttons">
-                        <button id="telegram"> <span class="icon-telegram"></span> Telegram</button>
-                        <button id="whatSapp"> <span class="icon-whatsapp"></span> WhatSApp</button>
+                    <div class="flex-block">
+                        <button class="telegram flex-block"> <span class="icon-telegram"></span> Telegram</button>
+                        <button class="whatSapp flex-block"> <span class="icon-whatsapp"></span> WhatSApp</button>
                     </div>
-                    
+
                 </div>
                 <div class="time">
-                    <p>Среднее время</p>
-                    <p>ответа: 24 секунды</p>
+                    <p>Среднее время <br> ответа: 24 секунды</p>
                 </div>
                 <div class="feedback">
                     <p><i class="icon-telephone"></i> Звоните прямо сейчас</p>
@@ -57,28 +47,38 @@
             <div class="nav-shadow">
                 <nav>
                     <ul>
-                        <li><a href="#">Проекты</a></li>
-                        <li><a href="#">Расчет стоимости</a></li>
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Производство</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li>Проекты
+                        </li>
+                        <li>Расчет стоимости
+                        </li>
+                        <li>Портфолио
+                        </li>
+                        <li>О нас
+                        </li>
+                        <li>Производство
+                        </li>
+                        <li>Отзывы
+                        </li>
+                        <li>Контакты
+                            <div class="icon icon-birds birds"></div>
+                        </li>
                     </ul>
-                </nav>   
+                </nav>
             </div>
 
             <div class="head-question">
-                <p>Мечтаете о надежном и комфортном доме?</p>
+                <div class="icon icon-leaf2 leaf2"></div>
+                <h4>Мечтаете о надежном и комфортном доме?</h4>
             </div>
 
             <div class="head-desc">
-                <p>Строим премиальные</p>
-                <p>дома из клееного бруса</p>
-                <p>по адекватной стоимости</p>
+                <h1>Строим премиальные</h1>
+                <h1>дома из клееного бруса</h1>
+                <h1>по адекватной стоимости</h1>
             </div>
 
             <div class="head-list">
+                <div class="icon icon-leaf leaf"></div>
                 <ul>
                     <li>
                         <p>В отличии от большинства наших коллег,</p>
@@ -86,7 +86,7 @@
                     </li>
                     <li>
                         <p><span>Мы не посредник</span>, а дочерняя компания</p>
-                        <p>завода изготовителя, поэтому <span>наши цены и</span></p> 
+                        <p>завода изготовителя, поэтому <span>наши цены и</span></p>
                         <p><span>условия всегда лучшие</span></p>
                     </li>
                 </ul>
@@ -109,8 +109,140 @@
         </div>
     </div>
 
+    <div class="catalog">
+        <h3 class="catalog-title">Мы построим именно тот дом, о котором вы мечтали, осталось только выбрать</h3>
+        <h2 class="catalog-desc">Построить по одному из 150 готовых проектов или <br> заказать индивидуальный, уникальный проект дома</h2>
+
+        <div class="options flex-block">
+            <div class="options-buttons">
+                <button>10&#215;10</button>
+                <button>10&#215;11</button>
+                <button>10&#215;12</button>
+                <button>10&#215;13</button>
+                <button>10&#215;15</button>
+            </div>
+            <p>СМОТРЕТЬ ВСЕ ПРОЕКТЫ</p>
+        </div>
+
+        <div class="products">
+            <div class="products-item">
+                <img src="./assets/product1.png">
+                <div class="products-desc">
+                    <div class="products-content">
+                        <h4 class="product-title">Дом из клееного бруса, проект №2-128</h4>
+                        <button class="button-type">10&#215;10</button>
+                        <button class="button-desc">S=260 м.к.м.</button>
+                        <p class="product-options">Тип:</p>
+                        <p class="product-options-desc">Двухэтажный с мансардой</p>
+                        <p class="product-options">Срок строительства:</p>
+                        <p class="product-options-desc">3 месяца</p>
+                        <p class="product-options">Количество комнат:</p>
+                        <p class="product-options-desc">12</p>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-button">
+                            <button>
+                                Посмотреть проект
+                            </button>
+                            <button>
+                                Посмотреть проект
+                            </button>
+                        </span>
+                        <div class="product-socials">
+                            <p class="product-socials-title">Задайте вопрос напрямую:</p>
+                            <div class="socials-buttons">
+                                <button class="telegram"> <span class="icon-telegram"></span> Telegram</button>
+                                <button class="whatSapp"> <span class="icon-whatsapp"></span> WhatSApp</button>
+                            </div>
+                            <div class="socials-buttons-up">
+                                <p class="buttons-up-title">Стоимость строительства от:</p>
+                                <p class="buttons-up-desc">4 890 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-item">
+                <img src="./assets/product2.png">
+                <div class="products-desc">
+                    <div class="products-content">
+                        <h4 class="product-title">Дом из клееного бруса, проект №2-128</h4>
+                        <button class="button-type">10&#215;10</button>
+                        <button class="button-desc">S=260 м.к.м.</button>
+                        <p class="product-options">Тип:</p>
+                        <p class="product-options-desc">Двухэтажный с мансардой</p>
+                        <p class="product-options">Срок строительства:</p>
+                        <p class="product-options-desc">3 месяца</p>
+                        <p class="product-options">Количество комнат:</p>
+                        <p class="product-options-desc">12</p>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-button">
+                            <button>
+                                Посмотреть проект
+                            </button>
+                            <button>
+                                Посмотреть проект
+                            </button>
+                        </span>
+                        <div class="product-socials">
+                            <p class="product-socials-title">Задайте вопрос напрямую:</p>
+                            <div class="socials-buttons">
+                                <button class="telegram"> <span class="icon-telegram"></span> Telegram</button>
+                                <button class="whatSapp"> <span class="icon-whatsapp"></span> WhatSApp</button>
+                            </div>
+                            <div class="socials-buttons-up">
+                                <p class="buttons-up-title">Стоимость строительства от:</p>
+                                <p class="buttons-up-desc">4 890 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-item">
+                <img src="./assets/product3.png">
+                <div class="products-desc">
+                    <div class="products-content">
+                        <h4 class="product-title">Дом из клееного бруса, проект №2-128</h4>
+                        <button class="button-type">10&#215;10</button>
+                        <button class="button-desc">S=260 м.к.м.</button>
+                        <p class="product-options">Тип:</p>
+                        <p class="product-options-desc">Двухэтажный с мансардой</p>
+                        <p class="product-options">Срок строительства:</p>
+                        <p class="product-options-desc">3 месяца</p>
+                        <p class="product-options">Количество комнат:</p>
+                        <p class="product-options-desc">12</p>
+                    </div>
+                    <div class="product-footer">
+                        <span class="product-button">
+                            <button>
+                                Посмотреть проект
+                            </button>
+                            <button>
+                                Посмотреть проект
+                            </button>
+                        </span>
+                        <div class="product-socials">
+                            <p class="product-socials-title">Задайте вопрос напрямую:</p>
+                            <div class="socials-buttons">
+                                <button class="telegram"> <span class="icon-telegram"></span> Telegram</button>
+                                <button class="whatSapp"> <span class="icon-whatsapp"></span> WhatSApp</button>
+                            </div>
+                            <div class="socials-buttons-up">
+                                <p class="buttons-up-title">Стоимость строительства от:</p>
+                                <p class="buttons-up-desc">4 890 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
     <footer>
     </footer>
 
 </body>
+
 </html>
