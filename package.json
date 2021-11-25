@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp": "C:/Users/Admin/Desktop/Study/Web/Web-page/node_modules/.bin/gulp"
+    "gulp": "C:/Users/Admin/Desktop/Study/Web-page/node_modules/.bin/gulp"
   },
   "repository": {
     "type": "git",

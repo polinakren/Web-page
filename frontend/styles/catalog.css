@@ -10,7 +10,6 @@
 
 .catalog-desc {
     margin: 0 0 22px 0;
-    font-weight: bold;
 }
 
 .options {
@@ -18,9 +17,8 @@
 }
 
 .options p {
-    border-bottom: 1px dashed;
+    border-bottom: 1px solid;
     font-size: 13px;
-    font-weight: bold;
     color: #2e86aa;
     text-transform: uppercase;
     cursor: pointer;
@@ -41,16 +39,9 @@
     color: #fff;
 }
 
-.products {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .products-item {
     min-height: 703px;
-    min-width: 571px;
-    width: calc(50%-100px);
+    width: calc(50% - 15px);
     margin-bottom: 33px;
     border-radius: 10px;
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.17);
@@ -60,23 +51,25 @@
 @media (min-width: 1600px) {
     .products::after {
         content: '';
-        width: calc(33.333%-20px);
+        width: calc(33.333% - 20px);
     }
 
     .products-item {
-        width: calc(33.333%-20px);
+        width: calc(33.333% - 15px);
     }
 }
 
 .products img {
     margin: 0;
-    width: 570px;
+    width: 100%;
     border-radius: 10px 10px 0 0;
 }
 
 .products-desc {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
     padding: 29px 45px 38px 35px;
 }
 
@@ -86,12 +79,11 @@
 
 .product-title {
     margin: 0 0 15px 0;
-    font-weight: bold;
+    width: 100%;
 }
 
 .product-desc button {
     font-size: 13px;
-    font-weight: bold;
 }
 
 .button-type {
@@ -100,7 +92,6 @@
     border-radius: 21.9px;
     border: solid 2px #2e86aa;
     background-color: #fff;
-    font-weight: bold;
 }
 
 .button-desc {
@@ -109,7 +100,6 @@
     border-radius: 21.9px;
     border: solid 2px #f5d57b;
     background-color: #fff;
-    font-weight: bold;
 }
 
 .product-options {
@@ -155,14 +145,8 @@
     background-color: #dab792;
 }
 
-.product-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
 .product-socials {
-    position: relative;
+    margin-top: 25px;
     padding: 21px 20px 22px 21px;
     border-radius: 10px;
     background-color: #edf0f2;
@@ -191,10 +175,7 @@
 }
 
 .socials-buttons-up {
-    position: absolute;
-    margin-top: -250px;
-    display: block;
-    padding: 10px 10px 10px 10px;
+    padding: 23px 24px 28px 22px;
     border-radius: 10px;
     background-color: #e9ecee;
 }

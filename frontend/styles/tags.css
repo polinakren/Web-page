@@ -4,7 +4,7 @@ body {
     max-width: 2200px;
     background-color: #fff;
     color: black;
-    font-family: 'Geometria';
+    font-family: 'Geometria', sans-serif;
     font-weight: normal;
 }
 

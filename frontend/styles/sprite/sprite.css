@@ -18,61 +18,85 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-birds {
   background-image: url(sprite.png);
-  background-position: -84px -246px;
+  background-position: -99px -97px;
   width: 73px;
   height: 32px;
 }
-.icon-bush {
+.icon-calculator {
   background-image: url(sprite.png);
-  background-position: 0px 0px;
-  width: 255px;
-  height: 246px;
+  background-position: -197px -44px;
+  width: 24px;
+  height: 50px;
 }
 .icon-leaf {
   background-image: url(sprite.png);
-  background-position: -255px -133px;
+  background-position: -99px 0px;
   width: 98px;
   height: 97px;
 }
 .icon-leaf2 {
   background-image: url(sprite.png);
-  background-position: -255px 0px;
+  background-position: 0px 0px;
   width: 99px;
   height: 133px;
 }
 .icon-logo {
   background-image: url(sprite.png);
-  background-position: 0px -246px;
-  width: 84px;
+  background-position: 0px -133px;
+  width: 195px;
   height: 36px;
+}
+.icon-man {
+  background-image: url(sprite.png);
+  background-position: -202px -110px;
+  width: 9px;
+  height: 11px;
+}
+.icon-present {
+  background-image: url(sprite.png);
+  background-position: -197px 0px;
+  width: 39px;
+  height: 44px;
 }
 .icon-star {
   background-image: url(sprite.png);
-  background-position: -281px -230px;
+  background-position: -213px -94px;
   width: 10px;
   height: 10px;
 }
 .icon-telegram {
   background-image: url(sprite.png);
-  background-position: -269px -230px;
+  background-position: -221px -76px;
   width: 12px;
   height: 10px;
 }
 .icon-telephone {
   background-image: url(sprite.png);
-  background-position: -291px -230px;
+  background-position: -223px -94px;
   width: 10px;
   height: 10px;
 }
+.icon-vertical {
+  background-image: url(sprite.png);
+  background-position: -197px -110px;
+  width: 5px;
+  height: 28px;
+}
+.icon-viber {
+  background-image: url(sprite.png);
+  background-position: -197px -94px;
+  width: 16px;
+  height: 16px;
+}
 .icon-whatsapp {
   background-image: url(sprite.png);
-  background-position: -255px -230px;
+  background-position: -221px -44px;
   width: 14px;
   height: 14px;
 }
 .icon-yandex {
   background-image: url(sprite.png);
-  background-position: -157px -246px;
+  background-position: -221px -58px;
   width: 9px;
   height: 18px;
 }

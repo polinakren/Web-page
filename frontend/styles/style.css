@@ -4,3 +4,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.medium {
+    font-weight: 500;
+}
