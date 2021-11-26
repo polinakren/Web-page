@@ -139,8 +139,11 @@ span {
     font-size: 12px;
 }
 
-.feedback p:nth-child(2),
-p:nth-child(3) {
+.feedback p:nth-child(2) {
+    font-size: 17px;
+}
+
+.feedback p:nth-child(2) {
     font-size: 17px;
 }
 

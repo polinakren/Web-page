@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
     <title> Wooden house </title>
     <link rel="stylesheet" href="./styles/all_styles.css">
+    <script src="../app.js"></script>
 </head>
 
 <body>
@@ -277,7 +278,81 @@
         </div>
 
         <div class="test">
-            <h2 class="bold">Получите расчет стоимости дома вашей мечты из <br> клееного бруса пройдя мини тест за 1 минуту</h2>
+            <section class="calculation">
+                <header>
+                    <h2 class="bold calculation-title">Получите расчет стоимости дома вашей мечты из <br> клееного бруса пройдя мини тест за 1 минуту</h2>
+                    <div class="steps">
+                        <div class="slide-indicator slide-indicator_active"></div>
+                        <div class="slide-indicator"></div>
+                        <div class="slide-indicator"></div>
+                        <div class="slide-indicator"></div>
+                        <div class="slide-indicator"></div>
+                    </div>
+                    <div class="steps-number bold">Шаг <span class="step">1</span> из 5</div>
+                </header>
+                <main>
+                    <div class="slide slide_active" data-helper-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sed.">
+                        <h3 class="bold slide1-title">В каком стиле вы бы хотели построить свой дом?</h3>
+                        <div class="slide1-firstLine-img">
+                            <img src="./assets/style1.png" class="slide1-img-space">
+                            <img src="./assets/style2.png" class="slide1-img-space">
+                            <img src="./assets/style3.png">
+                        </div>
+                        <img src="./assets/style4.png" class="slide1-img-space">
+                        <img src="./assets/style5.png" class="slide1-img-space">
+                        <img src="./assets/style6.png">
+                    </div>
+                    <div class="slide" data-helper-text="Lorem ipsum dolor sit amet 2.">
+                        <h3 class="bold slide2-title">Вы бы хотели строить дом по нашему готовому проекту или <br> нужно разработать уникальный проект</h3>
+                        <div class="checkbox-block">
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
+                                <label for="color-1">По вашему проекту</label>
+                            </div>
+    
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="indigo">
+                                <label for="color-2">По моему готовому проекту</label>
+                            </div>
+    
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="indigo">
+                                <label for="color-3">Нужно разработать уникальный проект</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="slide" data-helper-text="Lorem ipsum dolor sit amet 3.">
+                        <div class="slide3-content">
+                            <h3 class="bold">Прикрепите план участка если он есть <br> (не обязательно)</h3>
+                            <div class="attach-field">
+                                <p class="medium attach-title">Переместите файл сюда</p>
+                                <p class="medium">или</p>
+                                <p class="attach-place medium"><span>+</span>прикрепить файл</p>
+                            </div>
+                            <h3 class="bold">Пришлите фото или видео участка в любой из <br> наших мессенджеров (не обязательно)</h3>
+                        </div>
+                    </div>
+                    <div class="slide" data-helper-text="Lorem ipsum dolor sit amet 4.">
+                        Slide 4
+                    </div>
+                    <div class="slide" data-helper-text="Lorem ipsum dolor sit amet 5.">
+                        Slide 5
+                    </div>
+                </main>
+                <aside>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi deserunt error impedit in possimus, quisquam.
+                  <div class="slide-helper">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sed.
+                  </div>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, expedita quaerat quia rerum sunt tenetur.
+                </aside>
+                <footer>
+                  <!-- `data-reset-text` содержит текст, который будет у кнопки на последнем слайде. -->
+                  <button class="button test-button1" data-reset-text="Начать сначала">Далее</button>
+                  <button class="button test-button2" data-reset-text="Начать сначала">Далее</button>
+                </footer>
+              </section>
         </div>
     </div>
 
