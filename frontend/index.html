@@ -25,7 +25,7 @@
                         <span class="icon-star icon"></span>
                         <span>Ваша оценка</span>
                     </div>
-                    <p>Рейтинг организаций в яндексе</p>
+                    <p class="medium">Рейтинг организаций в яндексе</p>
                 </div>
                 <div class="socials">
                     <p>Задайте вопрос напрямую:</p>
@@ -36,12 +36,12 @@
 
                 </div>
                 <div class="time">
-                    <p>Среднее время <br> ответа: 24 секунды</p>
+                    <p class="medium">Среднее время <br> ответа: 24 секунды</p>
                 </div>
                 <div class="feedback">
                     <p><i class="icon-telephone"></i> Звоните прямо сейчас</p>
-                    <p><a href="tel:+74950034562">+7 (495) 003-45-62</a></p>
-                    <p><a href="tel:+79210034562">+7 (921) 003-45-62</a></p>
+                    <p class="medium"><a href="tel:+74950034562">+7 (495) 003-45-62</a></p>
+                    <p class="medium"><a href="tel:+79210034562">+7 (921) 003-45-62</a></p>
                     <p><span>Просчитайте смету</span><span>Перезвоните мне</span></p>
                 </div>
             </div>
@@ -70,7 +70,7 @@
 
             <div class="head-question">
                 <div class="icon icon-leaf2 leaf2"></div>
-                <h4>Мечтаете о надежном и комфортном доме?</h4>
+                <h4 class="medium">Мечтаете о надежном и комфортном доме?</h4>
             </div>
 
             <div class="head-desc">
@@ -112,7 +112,7 @@
     </div>
 
     <div class="catalog">
-        <h3 class="catalog-title">Мы построим именно тот дом, о котором вы мечтали, осталось только выбрать</h3>
+        <h3 class="catalog-title medium">Мы построим именно тот дом, о котором вы мечтали, осталось только выбрать</h3>
         <h2 class="catalog-desc bold">Построить по одному из 150 готовых проектов или <br> заказать индивидуальный, уникальный проект дома</h2>
 
         <div class="options flex-block">
@@ -293,31 +293,45 @@
                 <main>
                     <div class="slide slide_active" data-helper-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sed.">
                         <h3 class="bold slide1-title">В каком стиле вы бы хотели построить свой дом?</h3>
-                        <div class="slide1-firstLine-img">
-                            <img src="./assets/style1.png" class="slide1-img-space">
-                            <img src="./assets/style2.png" class="slide1-img-space">
-                            <img src="./assets/style3.png">
+                        <div class="slide-img flex-block">
+                            <div>
+                                <img src="./assets/style1.png">
+                            </div>
+                            <div>
+                                <img src="./assets/style2.png">
+                            </div>
+                            <div>
+                                <img src="./assets/style3.png">
+                            </div>
+                           
+                            <div>
+                                <img src="./assets/style4.png">
+                            </div>
+                            <div>
+                                <img src="./assets/style5.png">
+                            </div>
+                            <div>
+                                <img src="./assets/style6.png">
+                            </div>
+                            
                         </div>
-                        <img src="./assets/style4.png" class="slide1-img-space">
-                        <img src="./assets/style5.png" class="slide1-img-space">
-                        <img src="./assets/style6.png">
                     </div>
                     <div class="slide" data-helper-text="Lorem ipsum dolor sit amet 2.">
                         <h3 class="bold slide2-title">Вы бы хотели строить дом по нашему готовому проекту или <br> нужно разработать уникальный проект</h3>
                         <div class="checkbox-block">
                             <div class="checkbox">
-                                <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
-                                <label for="color-1">По вашему проекту</label>
+                                <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo" checked>
+                                <label for="color-1" class="medium">По вашему проекту</label>
                             </div>
     
                             <div class="checkbox">
                                 <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="indigo">
-                                <label for="color-2">По моему готовому проекту</label>
+                                <label for="color-2"  class="medium">По моему готовому проекту</label>
                             </div>
     
                             <div class="checkbox">
                                 <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="indigo">
-                                <label for="color-3">Нужно разработать уникальный проект</label>
+                                <label for="color-3"  class="medium">Нужно разработать уникальный проект</label>
                             </div>
                         </div>
                         
@@ -331,26 +345,93 @@
                                 <p class="attach-place medium"><span>+</span>прикрепить файл</p>
                             </div>
                             <h3 class="bold">Пришлите фото или видео участка в любой из <br> наших мессенджеров (не обязательно)</h3>
+                            <div class="socials">
+                                <button><span class="icon-telegramBlue"></span> Telegram</button>
+                                <button><span class="icon-whatsappGreen"></span> WhatSApp</button>
+                                <button><span class="icon-viber"></span> Viber</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide" data-helper-text="Lorem ipsum dolor sit amet 4.">
-                        Slide 4
+                    <div class="slide slide4" data-helper-text="Lorem ipsum dolor sit amet 4.">
+                        <h3 class="bold slide4-title">Укажите примерные желаемые размеры вашего дома</h3>
+                        <div class="checkbox-block">
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo" checked>
+                                <label for="color-1" class="medium">10&#215;10</label>
+                            </div>
+    
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="indigo">
+                                <label for="color-2" class="medium">10&#215;15</label>
+                            </div>
+    
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="indigo">
+                                <label for="color-3" class="medium">15&#215;15</label>
+                            </div>
+
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-4" name="color-4" value="indigo">
+                                <label for="color-4" class="medium">Больше</label>
+                            </div>
+                            <textarea class="clienIdea" placeholder="Впишите свой вариант..."></textarea>
+                        </div>
                     </div>
-                    <div class="slide" data-helper-text="Lorem ipsum dolor sit amet 5.">
-                        Slide 5
+                    <div class="slide slide5" data-helper-text="Lorem ipsum dolor sit amet 5.">
+                        <h3 class="bold slide5-title">Где территориально находится ваш объект?</h3>
+                        <div class="place">
+                            <h3 class="bold">Город, поселок, адрес</h3>
+                            <textarea class="clienIdea" placeholder="Ваше сообщение..."></textarea>
+                            <h3 class="bold question">Когда нужно приступить?</h3>
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo" checked>
+                                <label for="color-1" class="medium">Еще вчера</label>
+                            </div>
+    
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="indigo">
+                                <label for="color-2"  class="medium">В течени 1 месяца</label>
+                            </div>
+    
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="indigo">
+                                <label for="color-3"  class="medium">Другое</label>
+                            </div>
+                        </div>
                     </div>
                 </main>
                 <aside>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi deserunt error impedit in possimus, quisquam.
-                  <div class="slide-helper">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sed.
-                  </div>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, expedita quaerat quia rerum sunt tenetur.
+                    <img src="./assets/sergey.png"> 
+                    <span class="medium title"><p>Проектировщик Клевер Удачи <br> стаж 16 лет</p></span>
+                    <span class="name bold"><p>Сергей Федоров</p></span>
+
+                    <div class="product-socials">
+                        <p class="product-socials-title">Задайте вопрос напрямую:</p>
+                        <div class="socials-buttons">
+                            <button class="telegram"> <span class="icon-telegram"></span> Telegram</button>
+                            <button class="whatSapp"> <span class="icon-whatsapp"></span> WhatSApp</button>
+                        </div>
+                    </div>
+                    <p class="medium time">Среднее время ответа: 24 секунды</p>
+                    <div class="slide-helper">
+                        <p>Здравствуйте, меня зовут Сергей и я помогу вам понять какой бюджет понадобится для строительства вашего дома</p>
+                        <p>Ответьте на несколько вопросов, чтобы я мог сориентировать вас по стоимости: </p>
+                    </div>
+
+                    <div class="result">
+                        <p class="medium">В конце расчета вы получите:</p>
+                        <div class="flex-block result-item">
+                            <span class="icon-calculator"></span>
+                            <p class="medium">Полный расчет стоимости и смету на строительство <br> с материалами</p>
+                        </div>
+                        
+                    </div>
+                    
                 </aside>
                 <footer>
-                  <!-- `data-reset-text` содержит текст, который будет у кнопки на последнем слайде. -->
-                  <button class="button test-button1" data-reset-text="Начать сначала">Далее</button>
-                  <button class="button test-button2" data-reset-text="Начать сначала">Далее</button>
+                    <!-- `data-reset-text` содержит текст, который будет у кнопки на последнем слайде. -->
+                    <button class="button test-button1" data-reset-text="Начать сначала">Далее</button>
+                    <button class="button test-button2" data-reset-text="Начать сначала">Далее</button>
                 </footer>
               </section>
         </div>

@@ -5,7 +5,6 @@
 
 .catalog-title {
     margin: 29px 0 26px 0;
-    font-weight: 500;
 }
 
 .catalog-desc {
@@ -141,8 +140,8 @@
 }
 
 .product-button button:nth-child(2):hover {
-    border: solid 2px #dab792;
-    background-color: #dab792;
+    border: solid 2px #C4B46B;
+    background-color: #C4B46B;
 }
 
 .product-socials {

@@ -53,7 +53,6 @@ span {
 .mark p:last-child {
     margin: 8px 0 0 0;
     font-size: 9px;
-    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -103,6 +102,10 @@ span {
     cursor: pointer;
 }
 
+.telegram:hover {
+    background-color: #4186AB;
+}
+
 .whatSapp {
     padding: 7px 10px 8px;
     border: none;
@@ -111,10 +114,13 @@ span {
     cursor: pointer;
 }
 
+.whatSapp:hover {
+    background-color: #409F63;
+}
+
 .time {
     margin: 4px;
     font-size: 10px;
-    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -130,7 +136,6 @@ span {
 }
 
 .feedback a {
-    font-weight: 500;
     text-decoration: none;
     color: black;
 }
@@ -199,7 +204,6 @@ nav li:hover {
     margin-top: 35px;
     margin-bottom: 15px;
     text-align: left;
-    font-weight: 500;
 }
 
 .head-desc h1:nth-child(2) {
@@ -282,8 +286,8 @@ nav li:hover {
 }
 
 .button-shadow button:nth-child(2):hover {
-    border: solid 2px #dab792;
-    background-color: #dab792;
+    border: solid 2px #C4B46B;
+    background-color: #C4B46B;
 }
 
 .button-consul {

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .test {
     margin: 25px 0 62px 0;
     min-height: 940px;
@@ -11,6 +15,11 @@
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+
+footer {
+    margin-left: 50%;
 }
 
 .test-button1 {
@@ -34,16 +43,17 @@
 }
 
 .button:hover {
-    border: solid 2px #dab792;
-    background-color: #dab792;
+    border: solid 2px #C4B46B;
+    background-color: #C4B46B;
 }
   
   
 .calculation {
     display: grid;
-    grid-template-columns: 1fr 280px;
-    grid-template-rows: 208px 598px 50px;
+    grid-template-columns: 1fr 282px;
+    grid-template-rows: 208px 578px 70px;
     grid-gap: 15px;
+    padding-bottom: 38px;
 }
 
 .calculation-title {
@@ -89,20 +99,6 @@
 .calculation main .slide_active {
     display: block;
 }
-  
-  
-.calculation aside {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    background: #aaf;
-}
-  
-.calculation aside .slide-helper {
-    margin: 10px 0;
-    color: white;
-}
 
 
 .slide1-title {
@@ -111,10 +107,6 @@
 
 .slide1-img-space {
     margin-right: 11px;
-}
-
-.slide1-firstLine-img {
-    margin-bottom: 74px;
 }
 
 .slide2-title {
@@ -127,7 +119,8 @@ input[type="checkbox"] {
 }
 
 .checkbox-block {
-    padding: 48px 358px 277px 57px;
+    max-width: 768px;
+    padding: 48px 0 221px 57px;
     border-radius: 10px;
     border: solid 1px #afafaf;
 }
@@ -144,14 +137,15 @@ input[type="checkbox"] {
     display: inline-flex;
     align-items: center;
     user-select: none;
+    cursor: pointer;
   }
 
   /* создание в label псевдоэлемента before со следующими стилями */
   .custom-checkbox+label::before {
     content: '';
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 7px;
+    height: 7px;
     padding: 11px 9px 9px;
     flex-shrink: 0;
     flex-grow: 0;
@@ -167,7 +161,12 @@ input[type="checkbox"] {
 
   /* стили при наведении курсора на checkbox */
   .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
-    border-color: #b3d7ff;
+    border: 2px solid #52ba5d;
+    
+  }
+
+  .custom-checkbox+label:hover {
+    font-weight: bold;
   }
 
   /* стили для чекбокса, находящегося в состоянии checked */
@@ -205,15 +204,222 @@ input[type="checkbox"] {
       text-transform: uppercase;
       color: #53bf5e;
       font-size: 14px;
+      cursor: pointer;
   }
 
   .attach-place span {
     margin-right: 13px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 10px 5px 10px;
     border-radius: 50%;
     color: #fff;
     font-size: 18px;
     background-color: #53bf5e;
 }
+
+
+.slide4-title {
+    margin: 50px 0 27px 0;
+}
+
+.slide-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
  
+.slide .socials {
+    margin-top: 16px;
+    padding: 0;
+    display: flex;
+}    
+
+.slide .socials button {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+    padding: 7px 10px 8px;
+    border: none;
+    border-radius: 14.5px;
+    background-color: #edf2f6;
+    font-size: 11px;
+    color: #000;
+}
+
+.slide .socials button:hover {
+    background-color: #B3B6B9;
+}
+
+
+.slide4 .checkbox-block {
+    padding: 77px 0 30px 49px;
+}
+
+.slide4 textarea {
+    min-width: 657px;
+    min-height: 156px;
+    padding: 27px 0 89px 31px;
+    border: none;
+    border-radius: 10px;
+    background-color: #edf2f6;
+    color: #000;
+}
+
+
+.slide5-title {
+    margin: 26px 0 27px 0;
+}
+
+.slide5 .place {
+    max-width: 768px;
+    padding: 40px 0 0 45px;
+    border-radius: 10px;
+    border: solid 1px #afafaf;
+}
+
+.slide5 textarea {
+    min-width: 669px;
+    min-height: 156px;
+    margin: 25px 0 31px 0;
+    padding: 27px 0 0 31px;
+    border: none;
+    border-radius: 10px;
+    background-color: #edf2f6;
+    color: #000;
+}
+
+.slide5 .question {
+    margin-bottom: 32px;
+}
+
+
+.calculation aside {
+    padding: 10px 32px 23px 32px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border-radius: 10px;
+    background: #edf2f6;
+}
+
+.calculation aside img {
+    position: relative;
+    display:block;
+    margin:auto;
+  }
+  
+.calculation aside .name {
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 10px;
+    display: block;
+    padding: 17px 20px 13px 18px;
+    border-radius: 15px;
+    background: rgb(246,238,153);
+    background: linear-gradient(180deg, rgba(246,238,153,1) 0%, rgba(239,218,139,1) 100%);
+    transform: skew(-10deg);
+  
+}
+
+.calculation aside .name p{
+    transform: skew(10deg);
+    font-size: 17px;
+}
+
+.calculation aside .title {
+    max-width: 234px;
+    height: 67px;
+    margin-top: -10px;
+    margin-left: -6px;
+    position: absolute;
+    display: block;
+    padding: 25px 9px 14px 13px;
+    border-radius: 15px;
+    background-color: #fff;
+    transform: skew(-10deg);
+}
+
+.calculation aside .title p{
+    transform: skew(10deg);
+    font-size: 13px;
+}
+  
+.calculation aside .slide-helper {
+    font-size: 12px;
+    text-align: left;
+    color: #646469;
+}
+
+.calculation aside .slide-helper p:first-child{
+    margin-bottom: 14px;
+}
+
+.calculation aside .slide-helper p:last-child{
+    margin-bottom: 19px;
+}
+
+
+.calculation aside .product-socials {
+    margin-top: 57px;
+    padding: 11px 18px 14px 18px;
+    background: none;
+    text-align: center;
+}
+
+.calculation aside .product-socials p {
+    margin-bottom: 7px;
+}
+
+.calculation aside .time {
+    margin: 0 0 17px 0;
+    text-align: center;
+}
+
+.calculation aside .result-item {
+    font-size: 13px;
+}
+
+.calculation aside .result-item span {
     
+}
+
+.calculation aside .result p:first-child {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+
+@keyframes goingAwaySlide {
+    0% {
+      transform: translateX(0);
+    }
+  
+    33% {
+      transform: translateX(-10%);
+    }
+  
+    100% {
+      transform: translateX(100%);
+    }
+}
+  
+@keyframes appearingSlide {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+.calculation main .slide_appearing {
+    z-index: 1;
+    display: block;
+    animation: appearingSlide 1s ease-in-out 0s 1;
+}
+.calculation main .slide_going_away {
+    display: block;
+    animation: goingAwaySlide 1s ease-in-out 0s 1;
+}
